@@ -6,6 +6,7 @@
   "scripts": {
     "precommit": "npm run lint-staged",
     "start": "cross-env ESLINT=none roadhog dev",
+    "product":"pm2 npm run start",
     "start:no-proxy": "cross-env NO_PROXY=true ESLINT=none roadhog dev",
     "build": "cross-env ESLINT=none roadhog build",
     "site": "roadhog-api-doc static && gh-pages -d dist",
